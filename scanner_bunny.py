@@ -56,8 +56,8 @@ LOG_PATH = None
 LOG_UPLOAD_INTERVAL = random.randint(500, 800)
 LOG_ACTIVE = False
 
-BUNNY_STORAGE_URL = "https://storage.bunnycdn.com/hunters"
-BUNNY_API_KEY = "a34bea81-b348-49fb-a28ef869d967-3fe2-43fc"
+BUNNY_STORAGE_URL = "https://storage.bunnycdn.com/bunn1"
+BUNNY_API_KEY = "03809509-5d8c-4c1a-b8c0358fa5d7-2670-4bb8"
 
 DNS_WORKERS_EC2 = 100
 DNS_TIMEOUT_EC2 = 3
