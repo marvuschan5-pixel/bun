@@ -53,7 +53,8 @@ class TeeLogger:
 LOGS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
 LOG_FILE = None
 LOG_PATH = None
-LOG_UPLOAD_INTERVAL = random.randint(500, 800)
+#LOG_UPLOAD_INTERVAL = random.randint(500, 800)
+LOG_UPLOAD_INTERVAL = 60
 LOG_ACTIVE = True
 
 BUNNY_STORAGE_URL = "https://storage.bunnycdn.com/datalg"
@@ -61,10 +62,10 @@ BUNNY_API_KEY = "20e09264-6a0b-4c15-9500eb86adfd-cfc3-482e"
 
 DNS_WORKERS_EC2 = 100
 DNS_TIMEOUT_EC2 = 3
-MAX_IPS_PER_CIDR = 5
+MAX_IPS_PER_CIDR = 20
 
 TOTAL_SLOTS = 2000
-NUM_WORKERS = 3
+NUM_WORKERS = 5
 
 _CONTAINER_NAME = os.environ.get('HOSTNAME', f'local_{int(time.time())}')
 _SLOT_HASH = int(hashlib.md5(_CONTAINER_NAME.encode()).hexdigest()[:12], 16)
