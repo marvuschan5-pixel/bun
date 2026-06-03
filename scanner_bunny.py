@@ -55,7 +55,7 @@ LOG_FILE = None
 LOG_PATH = None
 #LOG_UPLOAD_INTERVAL = random.randint(500, 800)
 LOG_UPLOAD_INTERVAL = 60
-LOG_ACTIVE = False
+LOG_ACTIVE = True
 
 BUNNY_STORAGE_URL = "https://storage.bunnycdn.com/datalg"
 BUNNY_API_KEY = "20e09264-6a0b-4c15-9500eb86adfd-cfc3-482e"
